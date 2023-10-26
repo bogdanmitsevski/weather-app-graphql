@@ -19,28 +19,18 @@ MUTATION EXAMPLE
 mutation {
 
   addWeather(input: { lat: 8, lon: -74.0060, part: "hourly,daily" }) {
+  
     lat
-    
     lon
-    
     exclude
-    
     sunset
-    
     sunrise
-    
     pressure
-    
     temp
-    
     feels_like
-    
     pressure
-    
     humidity
-    
     uvi
-    
     wind_speed
     
   }
@@ -48,8 +38,11 @@ mutation {
 }
 
 QUERY EXAMPLE
+
 query {
+  
   weather(input: { lat: 2, lon: -74.0060, part: "hourly,daily" }) {
+  
     sunset
     sunrise
     pressure
@@ -59,5 +52,7 @@ query {
     humidity
     uvi
     wind_speed
+    
   }
+  
 }
