@@ -19,7 +19,6 @@ MUTATION EXAMPLE
 mutation {
 
   addWeather(input: { lat: 8, lon: -74.0060, part: "hourly,daily" }) {
-  
     lat
     
     lon
