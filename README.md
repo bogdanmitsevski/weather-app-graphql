@@ -15,22 +15,37 @@ Runs the app
 Open link http://localhost:3001/graphql
 
 MUTATION EXAMPLE
+
 mutation {
 
   addWeather(input: { lat: 8, lon: -74.0060, part: "hourly,daily" }) {
+  
     lat
+    
     lon
+    
     exclude
+    
     sunset
+    
     sunrise
+    
     pressure
+    
     temp
+    
     feels_like
+    
     pressure
+    
     humidity
+    
     uvi
+    
     wind_speed
+    
   }
+  
 }
 
 QUERY EXAMPLE
