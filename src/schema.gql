@@ -1,0 +1,42 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Weather {
+  sunrise: Float!
+  sunset: Float!
+  temp: Float!
+  feels_like: Float!
+  pressure: Float!
+  humidity: Float!
+  uvi: Float!
+  wind_speed: Float!
+}
+
+type AddedWeather {
+  lat: Float!
+  lon: Float!
+  exclude: String!
+  sunrise: Float!
+  sunset: Float!
+  temp: Float!
+  feels_like: Float!
+  pressure: Float!
+  humidity: Float!
+  uvi: Float!
+  wind_speed: Float!
+}
+
+type Query {
+  weather(input: FetchWeatherDTO!): Weather!
+}
+
+input FetchWeatherDTO {
+  lat: Float!
+  lon: Float!
+  part: String!
+}
+
+type Mutation {
+  addWeather(input: FetchWeatherDTO!): AddedWeather!
+}
